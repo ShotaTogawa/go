@@ -1,1 +1,7 @@
 2021/01/16 16:35:04 main.go:16: test
+2021/01/16 16:50:57 base.go:23: sql: unknown driver "splite3" (forgotten import?)
+2021/01/16 16:51:30 base.go:23: sql: unknown driver "splite3" (forgotten import?)
+2021/01/16 16:53:09 base.go:23: sql: unknown driver "splite3" (forgotten import?)
+2021/01/16 16:53:57 base.go:24: sql: unknown driver "splite3" (forgotten import?)
+2021/01/16 16:55:31 base.go:23: sql: unknown driver "splite3" (forgotten import?)
+2021/01/16 17:46:18 base.go:25: sql: unknown driver "sqlite3" (forgotten import?)
