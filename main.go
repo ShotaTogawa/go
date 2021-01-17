@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"./app/models"
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -22,16 +20,20 @@ func main() {
 
 	// u.CreateUser()
 
-	user, _ := models.GetUser(2)
+	// user, _ := models.GetUser(2)
 	// user.CreateTodo("apple todo")
 	// fmt.Println(user)
 
 	// t, _ := models.GetTodo(1)
 	// fmt.Println(t)
 
-	todos, _ := user.GetTodosByUser()
-	for _, v := range todos {
-		fmt.Println(v)
-	}
+	// todos, _ := user.GetTodosByUser()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+
+	t, _ := models.GetTodo(1)
+	t.Content = "Update todo"
+	t.UpdateTodo()
 
 }
