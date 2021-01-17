@@ -16,20 +16,20 @@ func main() {
 	// log.Println("test")
 
 	// u := &models.User{}
-	// u.Name = "test"
+	// u.Name = "apple"
 	// u.Email = "test@example.com"
 	// u.PassWord = "texttext"
 
 	// u.CreateUser()
 
 	user, _ := models.GetUser(2)
-	user.CreateTodo("Second todo")
+	// user.CreateTodo("apple todo")
 	// fmt.Println(user)
 
 	// t, _ := models.GetTodo(1)
 	// fmt.Println(t)
 
-	todos, _ := models.GetTodos()
+	todos, _ := user.GetTodosByUser()
 	for _, v := range todos {
 		fmt.Println(v)
 	}
