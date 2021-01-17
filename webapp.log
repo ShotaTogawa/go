@@ -1,4 +1,0 @@
-2021/01/17 19:18:46 users.go:106: no such table: session
-2021/01/17 19:18:46 main.go:20: sql: no rows in result set
-2021/01/17 19:19:00 users.go:106: not enough args to execute query: want 4 got 3
-2021/01/17 19:19:00 main.go:20: sql: no rows in result set
