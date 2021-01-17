@@ -9,7 +9,7 @@ import (
 )
 
 type ConfigList struct {
-	Port      int
+	Port      string
 	DbName    string
 	SQLDriver string
 	LogFile   string
@@ -29,7 +29,7 @@ func LoadConfig() {
 	}
 
 	Config = ConfigList{
-		Port:      cfg.Section("web").Key("port").MustInt(8080),
+		Port:      cfg.Section("web").Key("port").MustString("8080"),
 		LogFile:   cfg.Section("web").Key("logfile").String(),
 		DbName:    cfg.Section("db").Key("name").String(),
 		SQLDriver: cfg.Section("db").Key("driver").String(),
