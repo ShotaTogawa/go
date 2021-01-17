@@ -15,14 +15,18 @@ func main() {
 
 	// log.Println("test")
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@example.com"
-	u.PassWord = "texttext"
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@example.com"
+	// u.PassWord = "texttext"
 
-	u.CreateUser()
+	// u.CreateUser()
 
-	user, _ := models.GetUser(2)
-	user.CreateTodo("First todo")
-	fmt.Println(user)
+	// user, _ := models.GetUser(2)
+	// user.CreateTodo("First todo")
+	// fmt.Println(user)
+
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
+
 }
