@@ -203,3 +203,48 @@ net/http.(*conn).serve(0xc000109680, 0x46315a0, 0xc00006a7c0)
 	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:1895 +0x86c
 created by net/http.(*Server).Serve
 	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2933 +0x35c
+2021/01/17 12:10:56 route_main.go:12: template: top.html:1: unexpected "}}" in define clause
+2021/01/17 12:15:17 server.go:3061: http: panic serving [::1]:55164: open app/views/templates/layout: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0001334a0)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:1772 +0x139
+panic(0x4539760, 0xc0001157a0)
+	/usr/local/Cellar/go/1.14.2/libexec/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/Cellar/go/1.14.2/libexec/src/html/template/template.go:372
+_/Users/shotatogawa/udemy/go/todo/app/controllers.generateHTML(0x463eba0, 0xc00018c0e0, 0x45077e0, 0x462c980, 0xc000052b30, 0x2, 0x2)
+	/Users/shotatogawa/udemy/go/todo/app/controllers/server.go:16 +0x2b8
+_/Users/shotatogawa/udemy/go/todo/app/controllers.top(0x463eba0, 0xc00018c0e0, 0xc00017e100)
+	/Users/shotatogawa/udemy/go/todo/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x45bd6e0, 0x463eba0, 0xc00018c0e0, 0xc00017e100)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2012 +0x44
+net/http.(*ServeMux).ServeHTTP(0x49266c0, 0x463eba0, 0xc00018c0e0, 0xc00017e100)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2387 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00018c000, 0x463eba0, 0xc00018c0e0, 0xc00017e100)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2807 +0xa3
+net/http.(*conn).serve(0xc0001334a0, 0x463f720, 0xc000148580)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:1895 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2933 +0x35c
+2021/01/17 12:15:18 server.go:3061: http: panic serving [::1]:55170: open app/views/templates/layout: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc000133540)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:1772 +0x139
+panic(0x4539760, 0xc000115920)
+	/usr/local/Cellar/go/1.14.2/libexec/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/Cellar/go/1.14.2/libexec/src/html/template/template.go:372
+_/Users/shotatogawa/udemy/go/todo/app/controllers.generateHTML(0x463eba0, 0xc00018c1c0, 0x45077e0, 0x462c980, 0xc000052b30, 0x2, 0x2)
+	/Users/shotatogawa/udemy/go/todo/app/controllers/server.go:16 +0x2b8
+_/Users/shotatogawa/udemy/go/todo/app/controllers.top(0x463eba0, 0xc00018c1c0, 0xc00017e200)
+	/Users/shotatogawa/udemy/go/todo/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x45bd6e0, 0x463eba0, 0xc00018c1c0, 0xc00017e200)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2012 +0x44
+net/http.(*ServeMux).ServeHTTP(0x49266c0, 0x463eba0, 0xc00018c1c0, 0xc00017e200)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2387 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00018c000, 0x463eba0, 0xc00018c1c0, 0xc00017e200)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2807 +0xa3
+net/http.(*conn).serve(0xc000133540, 0x463f720, 0xc000148700)
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:1895 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.14.2/libexec/src/net/http/server.go:2933 +0x35c
